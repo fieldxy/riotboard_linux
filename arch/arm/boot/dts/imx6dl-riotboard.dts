@@ -99,6 +99,20 @@
 		late_init = <0>;
 		status = "okay";
 	};
+
+    riotboard {
+        #address-cells = <1>;
+        #size-cells = <1>;
+        compatible = "riotboard-led";
+        status = "okey";
+        reg = < 0x020C406C 0x04
+                0x020E0068 0x04
+                0x020E02F4 0x04
+                0x0209C000 0x04
+                0x0209C004 0x04
+                
+                >;
+    }
 };
 
 &audmux {
